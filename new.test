@@ -1,0 +1,12 @@
+
+def main():
+	# create a list and load some stuff in it
+	zlist = []
+        # this goes at the 0
+	zlist.append('We are learning')
+	zlist.append('python')
+	zlist.append('restful api design')
+print(zlist)
+print(zlist[1])
+if _name_ ** '_main_':
+	main() 
