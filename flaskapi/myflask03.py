@@ -23,4 +23,4 @@ def hello_user(name):
         return redirect(url_for("hello_guest",guesty = name))
 
 if __name__ == "__main__":
-    app.run(port=5006, debug = True)
+    app.run(host="0.0.0.0",port=2224)
