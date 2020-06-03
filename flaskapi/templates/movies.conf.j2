@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+   <body>
+	   {{ reviewer }}<h1>'s Movie Review:</h1?
+
+   		<h1>Movie Name:</h1> {{ moviename }} 
+   		<h1>Movie Rating:</h1> {{ rating }}
+		<h1>Remarks About Movie: </h1>{{ comments }}
+
+		{% if rating>5 %}
+   			<h1> excellent Movie </h1>
+   		{% else %}
+   			<h1> Bad  Movie </h1>
+   		{% endif %}
+  </body>
+</html>
