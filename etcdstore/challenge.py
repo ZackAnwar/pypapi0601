@@ -87,9 +87,9 @@ def main():
             
         ## user wants info on a single ticket
         elif userinput == "2":
-            poemid = input("What is the poem name? ")
-            onename = (getpoemname)
-            em
+            poemname = input("What is the poem name? ")
+            onename = getpoemname(poemname)
+            
             # if oneticket returns a string or FALSE
             if onename:
                 print(f"\nFor {poemname}:")
@@ -109,7 +109,7 @@ def main():
             poemname = input("Update what oem Name? ")
             descofpoem = input("What is the updated 140 char description of the Name: ")
             ## updated name returns a two-tuple, or FALSE
-            updatedname = updatename(poemname, descofpoem)
+            updatedpoem = updatename(poemname, descofpoem)
             if updatedpoem:
                 print(f"\nFor {poemname}:")
                 print(f"    Updated Poem  Description - {updatedpoem[0]}")
